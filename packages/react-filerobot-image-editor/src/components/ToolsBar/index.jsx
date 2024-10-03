@@ -98,9 +98,6 @@ const ToolsBar = ({ isPhoneScreen }) => {
 
   return (
     <StyledToolsBar className="FIE_tools-bar-wrapper">
-      <ToolsBarItemOptionsWrapper isPhoneScreen={isPhoneScreen}>
-        {ToolOptionsComponent && <ToolOptionsComponent t={t} />}
-      </ToolsBarItemOptionsWrapper>
       {items && (
         <StyledToolsBarItems
           className="FIE_tools-bar"
@@ -115,6 +112,9 @@ const ToolsBar = ({ isPhoneScreen }) => {
           )}
         </StyledToolsBarItems>
       )}
+      <ToolsBarItemOptionsWrapper isPhoneScreen={isPhoneScreen}>
+        {ToolOptionsComponent && <ToolOptionsComponent t={t} />}
+      </ToolsBarItemOptionsWrapper>
     </StyledToolsBar>
   );
 };

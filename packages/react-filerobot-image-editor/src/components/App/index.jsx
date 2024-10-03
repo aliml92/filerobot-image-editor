@@ -335,8 +335,8 @@ const App = () => {
             className="FIE_editor-content"
             showTabsDrawer={showTabsDrawer}
           >
-            <MainCanvas />
             {!showCanvasOnly && <ToolsBar isPhoneScreen={isPhoneScreen} />}
+            <MainCanvas />
           </StyledCanvasAndTools>
         </StyledMainContent>
       )}
